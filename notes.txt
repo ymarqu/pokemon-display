@@ -1,0 +1,5 @@
+colors:
+red - FF0000
+dark red - CC0000
+blue - 3B4CCA
+yellow - FFDE00

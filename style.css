@@ -1,0 +1,93 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    min-height: auto;
+    background-color: #ECF2FF;
+}
+.navbar{
+    background-color: #3B4CCA;
+    padding: 20px 8%;
+    margin-bottom: 5rem;
+}
+.pokemon-main-container{
+    background-color: #ECF2FF ;
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto auto;
+}
+.pokemon-main-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+.card{
+    width: 25rem;
+    height: 35rem;
+    background-color: #FFFAD7;
+    border: solid 4px #FFDE00;
+    justify-self: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-body{
+    background-color: #FFFAD7;
+    text-align: center;
+}
+.card-img-top{
+
+    margin: auto auto;
+    margin-top: 20px;
+    width: 80%;
+    border: solid 4px #FFDE00;
+}
+/* MODAL */
+.modal{
+    box-sizing: border-box;
+}
+ol{
+    padding: 10px 10%;
+    list-style-position: inside;
+    box-sizing: border-box;
+}
+ol > li{
+    color: #ffff;
+    box-sizing: border-box;
+    height: 40px;
+    position: relative;
+    background-color: #E76161;
+    margin: 15px 0;
+
+
+}
+@media screen and (max-width: 1250px) {
+    .pokemon-main-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .pokemon-main-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+@media screen and (max-width: 415px){
+   .card{
+    width: 20rem;
+    height: 30rem;
+   }
+
+}
+@media screen and (max-width: 500px) {
+    ol > li {
+        height: 50px;
+    }
+    ol{
+        padding: 0 5%;
+    }
+}
